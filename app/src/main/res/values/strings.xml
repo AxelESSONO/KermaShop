@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Kerma Shop</string>
+    <string name="retour">Retour</string>
+    <string name="suivant">Suivant</string>
+    <string name="ignorer">Ignorer</string>
+    <string name="new_collection">New collection</string>
+    <string name="onboarding_description">A shower of patterns, new inspirations and intriguing details for women’s clothing.</string>
 </resources>
