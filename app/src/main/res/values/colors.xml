@@ -7,4 +7,19 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="colorApp">#FF2967FF</color>
+
+    <!-- Color Primary -->
+    <color name="layoutBackground">#FFd9d9d9</color>
+    <color name="colorWindowBackground">#FFE8EBEF</color>
+    <color name="colorIndicator">#9CB8FB</color>
+
+    <!-- Color Primary Night Start -->
+    <color name="layoutBackgroundNight">#d9d9d9</color>
+    <color name="colorWindowBackgroundNight">#FFE8EBEF</color>
+    <!-- Color Primary Night End -->
+
+    <color name="shimmer_placeholder">#dddddd</color>
+
 </resources>
