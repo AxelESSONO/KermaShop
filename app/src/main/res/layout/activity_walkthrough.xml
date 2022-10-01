@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWindowBackground"
     tools:context=".WalkthroughActivity">
 
     <androidx.viewpager2.widget.ViewPager2
@@ -14,25 +13,6 @@
         android:layout_height="0dp"
         app:layout_constraintHeight_percent="0.6"
         app:layout_constraintTop_toTopOf="parent"/>
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/skipButton"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="26dp"
-        android:backgroundTint="@color/colorApp"
-        android:stateListAnimator="@null"
-        android:insetLeft="0dp"
-        android:insetTop="0dp"
-        android:insetRight="0dp"
-        android:insetBottom="0dp"
-        app:cornerRadius="30dp"
-        android:text="@string/ignorer"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="@id/onboardingViewpager"
-        app:layout_constraintTop_toTopOf="@id/onboardingViewpager" />
 
     <LinearLayout
         android:id="@+id/onboardingLinear"
@@ -47,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:textColor="#2D2D2F"
+            android:textColor="@color/skipColorText"
             android:textSize="24sp"
             android:fontFamily="@font/roboto_bold"
             android:text="@string/new_collection"/>
@@ -56,13 +36,34 @@
             android:id="@+id/descriptionText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="20dp"
+            android:padding="18dp"
             android:textAlignment="center"
             android:textStyle="normal"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:fontFamily="@font/roboto_regular"
             android:text="@string/onboarding_description"/>
 
     </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/skipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:backgroundTint="#FFF6F6F6"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:stateListAnimator="@null"
+        android:text="@string/ignorer"
+        android:textAllCaps="false"
+        android:textColor="@color/skipColorText"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onboardingLinear" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
